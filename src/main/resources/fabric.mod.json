@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "commensalism",
+	"version": "${version}",
+	"name": "Commensalism",
+	"description": "Grow a creature to gain its power but be warned, there is no turning back",
+	"authors": [
+		"SnakeSnuggles"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/commensalism/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.snakesnuggles.commensalism.Commensalism"
+		],
+		"client": [
+			"net.snakesnuggles.commensalism.CommensalismClient"
+		],
+		"fabric-datagen": [
+			"net.snakesnuggles.commensalism.CommensalismDataGenerator"
+		]
+	},
+	"mixins": [
+		"commensalism.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
